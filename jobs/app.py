@@ -1,5 +1,4 @@
 from distutils.util import execute
-from lib2to3.pytree import _Results
 from multiprocessing import connection
 from flask import Flask,g
 from flask import render_template
@@ -28,6 +27,8 @@ def close_connection(exception):
     connection = getattr(g,'_connection',None)
     if connection is not None:
         connection.close()
+
+
 
 
 

@@ -1,4 +1,4 @@
-from crypt import methods
+
 from distutils.util import execute
 from multiprocessing import connection
 from pdb import post_mortem
